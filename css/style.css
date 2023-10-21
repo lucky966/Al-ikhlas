@@ -73,7 +73,7 @@ body {
 
 .navbar .navbar-extra a {
   color: #fff;
-  margin: 0 0.5;
+  margin: 0 0.5rem;
 }
 
 .navbar .navbar-extra a:hover {
@@ -260,6 +260,7 @@ body {
   display: flex;
   margin-top: 2rem;
   background-color: #222;
+  
 }
 .contack .row .map {
   flex: 1 1 45rem;
@@ -269,7 +270,7 @@ body {
 
 .contact .row form {
   flex: 1 1 45rem;
-  padding: 5rem 2rem;
+  padding: 5rem 4rem;
   text-align: center;
 }
 
@@ -284,7 +285,7 @@ body {
 
 .contack .row form .input-group input {
   width: 100%;
-  padding: 2rem;
+  padding: 1.2rem;
   font-size: 1.7rem;
   background: none;
   color: #fff;
@@ -309,7 +310,7 @@ body {
 footer {
   background-color: var(--primary);
   text-align: center;
-  padding: 1rem 0;
+  padding: 1rem 3rem;
   margin-top: 3rem;
 }
 
@@ -317,7 +318,7 @@ footer .social {
   padding: 1rem 0;
 }
 
-footer.social a {
+footer .social a {
   color: #fff;
   margin: 1rem;
   padding: 0.7rem 1rem;
@@ -327,7 +328,10 @@ footer .social a:hover,
 footer .link a:hover {
   color: var(--bg);
 }
-
+footer .link a{
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
 footer .link {
   margin-bottom: 1.4rem;
 }
@@ -350,7 +354,7 @@ footer .credit a {
   }
 }
 /* tablet */
-@media (max-width: 769px) {
+@media (max-width: 768px) {
   html {
     font-size: 62.5%;
   }
@@ -362,11 +366,11 @@ footer .credit a {
   .navbar .navbar-nav {
     position: absolute;
     top: 100%;
-    right: 0;
+    right: -100%;
     background-color: #fff;
     width: 25rem;
     height: 100vh;
-    /* transition: 0.3s; */
+    transition: 0.3s;
   }
 
   .navbar .navbar-nav.active {
